@@ -1,0 +1,117 @@
+@import "../../../../styles/variables";
+
+.main-navbar {
+  font-family: "GothamMedium";
+  height: 5rem;
+  background-color: white;
+  min-width: 100vw;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &__brand {
+    width: 20rem;
+    display: flex;
+    display: -webkit-flex;
+    padding-left: 1.5rem;
+    align-items: center;
+    cursor: default;
+  }
+
+  &__logo {
+    display: initial;
+    width: 40px;
+    padding-right: 1rem;
+  }
+
+  &__profile-action {
+    display: none;
+  }
+
+  &__menu-icon {
+    display: flex;
+    display: -webkit-flex;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding-right: 1rem;
+  }
+
+  &__user-avatar {
+    display: none;
+  }
+
+  &__user-info {
+    display: none;
+  }
+
+  @media (min-width: 800px) {
+    &__logo {
+      display: none;
+    }
+
+    &__profile-action {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+
+      & > .main-navbar__title {
+        padding-top: 0.5rem;
+        color: $primary-color;
+      }
+    }
+
+    &__actions {
+      justify-content: space-between;
+      display: flex;
+      display: -webkit-flex;
+      padding-right: 1rem;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    &__user-info {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      gap: .5rem;
+
+      &--valid {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        gap: .5rem;
+      }
+
+      & > .main-navbar__title {
+        padding-top: 0.5rem;
+        color: $secondary-color;
+        font-size: 1.125rem;
+      }
+      
+      & > .main-navbar__subtitle {
+        padding-top: 0.5rem;
+        color: $success-color;
+        font-size: 0.875rem;
+      }
+    }
+
+    &__menu-icon {
+      display: none;
+    }
+
+    &__user-avatar {
+     display: initial;
+      & > .main-navbar__title {
+        padding-top: 0.5rem;
+        color: $primary-color;
+      }
+    }
+  }
+}

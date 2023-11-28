@@ -1,0 +1,27 @@
+@import "../src/styles/variables.scss";
+
+@font-face {
+    font-family: 'GothamLight';
+    src: url('assets/fonts/Gotham/GothamMedium.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('assets/fonts/Gotham/GothamMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('assets/fonts/Gotham/GothamMedium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: $background-color;}

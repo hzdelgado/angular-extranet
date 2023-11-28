@@ -1,0 +1,73 @@
+<nav class="main-navbar">
+  <div class="main-navbar__brand">
+    <img
+      class="main-navbar__logo"
+      src="/assets/coril-alt-logo.svg"
+      alt="logo"
+    />
+    <div class="main-navbar__profile-action">
+      <mat-icon
+        class="main-navbar__profile-action main-navbar__icon"
+        svgIcon="briefcase"
+        aria-hidden="true"
+      ></mat-icon>
+      <span class="main-navbar__profile-action main-navbar__title">{{
+        profileActionTitle
+      }}</span>
+      <mat-icon
+        class="main-navbar__profile-action main-navbar__icon"
+        svgIcon="arrow-right"
+        aria-hidden="true"
+      ></mat-icon>
+    </div>
+  </div>
+  <div class="main-navbar__actions">
+    <div class="main-navbar__actions main-navbar__user-info">
+      <div class="main-navbar__user-info main-navbar__title">
+        {{ userFullName }}
+      </div>
+      <div
+        *ngIf="userVerified"
+        class="main-navbar__user-info main-navbar__user-info--valid"
+      >
+        <mat-icon
+          class="main-navbar__user-info main-navbar__icon"
+          svgIcon="check"
+          aria-hidden="true"
+        />
+        <span class="main-navbar__user-info main-navbar__subtitle">
+          Verificado
+        </span>
+      </div>
+      <ng-template
+        #elseBlock
+        class="main-navbar__user-info main-navbar__user-info--invalid"
+      >
+        <span class="main-navbar__user-info main-navbar__title">
+          Desconocido
+        </span>
+      </ng-template>
+    </div>
+    <div class="main-navbar__actions main-navbar__user-avatar">
+        <img
+        class="main-navbar__user-avatar main-navbar__img"
+        src="/assets/avatar.png"
+        alt="avatar"></div>
+
+        <mat-icon
+        class="main-navbar__user-avatar main-navbar__icon"
+        svgIcon="arrow-down"
+        aria-hidden="true"
+      ></mat-icon>
+    <button
+      class="main-navbar__actions main-navbar__menu-icon"
+      (click)="sidebarService.open()"
+    >
+      <mat-icon
+        class="main-navbar__menu-icon main-navbar__icon"
+        svgIcon="menu"
+        aria-hidden="true"
+      ></mat-icon>
+    </button>
+  </div>
+</nav>
