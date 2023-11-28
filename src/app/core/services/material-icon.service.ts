@@ -86,6 +86,11 @@ export class MatIconService {
         domSanitizer.bypassSecurityTrustResourceUrl(
           '../assets/green-check-icon.svg'
         )
+      ).addSvgIcon(
+        'logout',
+        domSanitizer.bypassSecurityTrustResourceUrl(
+          '../assets/logout-icon.svg'
+        )
       );
   }
 }

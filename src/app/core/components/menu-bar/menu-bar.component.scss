@@ -1,0 +1,151 @@
+@import "../../../../styles/variables.scss";
+
+.menu-bar {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .menu-bar {
+    font-family: "GothamMedium";
+    min-height: 100vh;
+    width: 19rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5rem;
+    background-image: url("../../../../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__logo {
+      padding-top: 2rem;
+      padding-left: 3rem;
+    }
+
+    &__options {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+    }
+
+    &__info {
+      color: white;
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      padding-left: 1.5rem;
+      height: 2rem;
+      gap: 1rem;
+    }
+
+    &__title {
+      font-size: 1.375rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+      font-weight: 300;
+      font-family: "GothamLight" !important;
+    }
+
+    &__options {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      align-items: start;
+      padding-left: 2.4rem;
+      gap: 1rem;
+    }
+
+    &__button {
+      border: none;
+      cursor: pointer;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 1rem;
+      width: 15rem;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+      background-color: transparent;
+      border-radius: 0.6rem;
+
+      &:hover {
+        background-color: $tertiary-color;
+        transition-duration: 0.5s;
+      }
+
+      &-icon {
+        width: 2rem;
+        padding-left: 1rem;
+      }
+
+      &-name {
+        -webkit-flex: auto;
+        flex: auto;
+        padding-top: 1rem;
+        font-size: 1rem;
+        color: white;
+        font-weight: 300;
+        font-family: "GothamLight";
+        text-decoration: none;
+        &:hover {
+          font-weight: 500;
+          font-family: "GothamMedium";
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__logout {
+      position: absolute;
+      bottom: 2.5rem;
+      padding-left: 2.4rem;
+    }
+
+    &__logout-button {
+      border: none;
+      cursor: pointer;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 1rem;
+      width: 15rem;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+      background-color: transparent;
+      border-radius: 0.6rem;
+
+      &:hover {
+        background-color: white;
+        transition-duration: 0.5s;
+      }
+
+      &-icon {
+        width: 2rem;
+        padding-left: 1rem;
+      }
+
+      &-name {
+        -webkit-flex: auto;
+        flex: auto;
+        padding-top: 1rem;
+        font-size: 1rem;
+        color: $tertiary-color;
+        text-decoration: none;
+        font-weight: 500;
+        font-family: "GothamMedium";
+
+        &:hover {
+          font-weight: 700;
+          font-family: "GothamBold";
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
