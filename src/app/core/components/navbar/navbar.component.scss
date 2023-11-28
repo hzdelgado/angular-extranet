@@ -52,6 +52,10 @@
       display: none;
     }
 
+    &__icon {
+      cursor: pointer;
+    }
+
     &__profile-action {
       display: flex;
       display: -webkit-flex;
@@ -62,6 +66,7 @@
       & > .main-navbar__title {
         padding-top: 0.5rem;
         color: $primary-color;
+        cursor: pointer;
         font-weight: 700;
         font-family: 'GothamBold';
       }
@@ -95,6 +100,7 @@
       & > .main-navbar__title {
         padding-top: 0.5rem;
         color: $secondary-color;
+     
         font-size: 1.125rem;
         font-weight: 700;
         font-family: 'GothamBold';
@@ -114,6 +120,7 @@
 
     &__user-avatar {
      display: initial;
+     cursor: pointer;
       & > .main-navbar__title {
         padding-top: 0.5rem;
         color: $primary-color;
