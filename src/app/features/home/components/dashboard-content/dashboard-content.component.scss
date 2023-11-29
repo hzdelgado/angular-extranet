@@ -13,12 +13,16 @@
 .dashboard-content {
   background-color: aqua;
   //height: calc(100vh - $navbar-height);
-  //width: calc(100vw - $menubar-width);
+  width: 100vw;
   background-color: $background-color;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
   overflow-y: scroll;
+
+  @media (min-width: 800px) {
+    width: calc(100vw - $menubar-width);
+  }
 }
 
 .dashboard-grid-wrapper {
@@ -40,6 +44,10 @@
 .box {
   background-color: white;
   border-radius: 0.5rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: unset;
+  grid-row-end: unset;
 
   &__content {
     display: flex;
@@ -160,6 +168,13 @@
     transition: all;
     transition-duration: 0.5s;
   }
+
+  @media (min-width: 600px) {
+    grid-column-start: unset;
+    grid-column-end: unset;
+    grid-row-start: unset;
+    grid-row-end: unset;
+  }
 }
 
 .box-historic {
@@ -240,7 +255,7 @@
   @media (min-width: 800px) {
     display: initial;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
   }
