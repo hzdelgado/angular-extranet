@@ -6,7 +6,7 @@ Esta aplicación es un ejemplo simple de una intranet hecha puramente con SCSS, 
 
 ## Demo
 
-URL de aplicación desplegada en Netlify [aquí](https://6566e98077730230ca5219cc--dreamy-cupcake-06bddf.netlify.app/dashboard).
+URL de aplicación desplegada en Netlify [aquí](https://6566e98077730230ca5219cc--dreamy-cupcake-06bddf.netlify.app/).
 
 ## Instrucciones
 
