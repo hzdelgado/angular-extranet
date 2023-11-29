@@ -1,9 +1,30 @@
 <div class="dashboard-content">
-    <app-user-info></app-user-info>
-    <div class="dashboard-grid-wrapper">
-        <div class="box box-historic">Two</div>
-  <div class="box">Three</div>
-  <div class="box">Four</div>
-  <div class="box">Five</div>
+  <app-user-info></app-user-info>
+  <div class="dashboard-grid-wrapper">
+    <div class="box box-historic">
+        <div class="box-historic__content">
+            <div class="box-historic__icon-button">
+                <mat-icon
+                  class="box-historic__icon-button box-historic__icon"
+                  svgIcon="empty-wallet"
+                  aria-hidden="true"
+                ></mat-icon>
+              </div>
+              <span class="box-historic__title">Mi Posición Actual</span>
+              <span class="box-historic__subtitle">Detalle al {{ currentDate | date: 'dd MMM YYYY'}}</span>
+              <span class="box-historic__amount">{{ amount }}</span>
+              <button class="box-historic__button">
+                <span class="box-historic__button-title">Posición histórica</span>
+                <mat-icon
+                class="box-historic__button-icon"
+                svgIcon="chevron-right"
+                aria-hidden="true"
+              ></mat-icon>
+              </button>
+        </div>
     </div>
+    <div class="box">Three</div>
+    <div class="box">Four</div>
+    <div class="box">Five</div>
+  </div>
 </div>

@@ -53,13 +53,23 @@
     gap: 1rem;
     background-color: $warning-color;
 
+    &:hover {
+      background-color: $warning-alt-color;
+    }
+
     &-title {
       font-family: "GothamMedium";
       padding-top: 0.4rem;
       font-weight: 500;
       color: white;
       font-size: 1.125rem;
+
+      &:hover {
+        font-family: "GothamBold";
+        font-weight: 700;
+      }
     }
+    
   }
 
   @media (min-width: 800px) {
