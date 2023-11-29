@@ -1,27 +1,36 @@
-# AngularExtranet
+# Angular - Extranet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+Esta aplicación es un ejemplo simple de una intranet hecha puramente con SCSS, y [Angular CLI](https://github.com/angular/angular-cli) versión 16.1.6.
 
-## Development server
+<img width="1787" alt="Screenshot 2023-11-29 at 02 36 39" src="https://github.com/hzdelgado/angular-extranet/assets/88523514/f7587a33-1871-4ecd-806e-17b60acb3814">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Demo
 
-## Code scaffolding
+URL de aplicación desplegada en Netlify [aquí](https://6566e98077730230ca5219cc--dreamy-cupcake-06bddf.netlify.app/dashboard).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instrucciones
 
-## Build
+### Instalar Paquetes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+npm install
+```
 
-## Running unit tests
+### Compilación y Hot-Reload para Desarrollo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+npm start
+```
 
-## Running end-to-end tests
+### Verificar tipos, compilar y minimizar para Producción
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```sh
+npm run build
+```
 
-## Further help
+### Lint con [ESLint](https://eslint.org/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```sh
+npm run lint
+```
+
