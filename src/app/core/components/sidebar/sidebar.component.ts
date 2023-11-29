@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, HostListener, Input } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, OnDestroy, OnInit } from '@angular/core';
 import { SidebarService } from './sidebar.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { SidebarService } from './sidebar.service';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
-export class SidebarComponent {
+export class SidebarComponent implements OnInit, OnDestroy {
 
   public width = 320;
   public x = 100;

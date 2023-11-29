@@ -1,1 +1,61 @@
-<p>user-info works!</p>
+<div class="info-wrapper">
+<div class="user-info">
+  <div class="user-info__section">
+    <div class="user-info__section user-info__content">
+      <div class="user-info__content user-info__first-row">
+        <div class="user-info__content user-info__icon-button">
+          <mat-icon
+            class="user-info__icon-button user-info__icon"
+            svgIcon="user"
+            aria-hidden="true"
+          ></mat-icon>
+        </div>
+        <div class="user-info__username">
+          <span class="user-info__username user-info__title">{{
+            userName
+          }}</span>
+          <span class="user-info__username user-info__subtitle">{{
+            accountType
+          }}</span>
+        </div>
+      </div>
+
+      
+      <div class="user-info__content user-info__second-row">
+        <div class="user-info__line"></div>
+        <div class="user-info__usercode">
+          <span class="user-info__usercode user-info__title">{{
+            userCode
+          }}</span>
+          <span class="user-info__usercode user-info__subtitle"
+            >Cod. cuenta</span
+          >
+        </div>
+        <div class="user-info__line"></div>
+        <div class="user-info__switch">
+          <span class="user-info__switch user-info__title">Portafolio en:</span>
+          <div class="user-info__tag">
+            <div class="user-info__tag-circle"></div>
+            <div class="user-info__tag-currency">{{ portolioCurrency }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="user-saving">
+    <div class="user-saving__section">
+        <div class="user-saving__line"></div>
+        <div class="user-saving__title">Mi posición actual</div>
+        <div class="user-saving__subtitle">{{userSavingAmount}}</div>
+        <button class="user-saving__button">
+            <span class="user-saving__button-title">Posición histórica</span>
+            <mat-icon
+            class="user-saving__button-icon"
+            svgIcon="chevron-right"
+            aria-hidden="true"
+          ></mat-icon>
+        </button>
+    </div>
+</div>
+</div>

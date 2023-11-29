@@ -1,15 +1,54 @@
 @import "../../../../../styles/variables.scss";
 
 .dashboard-content {
-    background-color: aqua;
-    height: calc(100vh - 5rem);
-    width: calc(100vw - 19rem);
-    background-color: $background-color;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
+  background-color: aqua;
+  height: calc(100vh - $navbar-height);
+  //width: calc(100vw - $menubar-width);
+  background-color: $background-color;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  overflow-y:scroll;
 }
 
-@media (min-width: 800px) {
-    .dashboard-content {}
+.dashboard-grid-wrapper {
+  display: grid;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 13rem;
+
+  @media (min-width: 800px) {
+    margin-top: 5rem;
+  }
+}
+
+.box {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.box-historic {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  @media (min-width: 800px) {
+    display: initial;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  @media (min-width: 1200px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }

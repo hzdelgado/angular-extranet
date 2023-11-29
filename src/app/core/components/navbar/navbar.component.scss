@@ -4,7 +4,7 @@
   font-family: "GothamMedium";
   height: 5rem;
   background-color: white;
-  min-width: calc(100vw);
+  min-width: 100vw;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
@@ -131,6 +131,6 @@
 
 @media (min-width: 800px) {
   .main-navbar {
-    min-width: calc(100vw - 19rem);
+    min-width: calc(100vw - $menubar-width);
   }
 }

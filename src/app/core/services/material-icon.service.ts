@@ -91,6 +91,11 @@ export class MatIconService {
         domSanitizer.bypassSecurityTrustResourceUrl(
           '../assets/logout-icon.svg'
         )
+      ).addSvgIcon(
+        'chevron-right',
+        domSanitizer.bypassSecurityTrustResourceUrl(
+          '../assets/chevron-right-icon.svg'
+        )
       );
   }
 }
