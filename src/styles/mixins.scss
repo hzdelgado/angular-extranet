@@ -1,0 +1,14 @@
+@mixin gothamBold {
+  font-family: "GothamBold";
+  font-weight: 700;
+}
+
+@mixin gothamLight {
+  font-family: "GothamLight";
+  font-weight: 300;
+}
+
+@mixin gothamMedium {
+  font-family: "GothamMedium";
+  font-weight: 500;
+}

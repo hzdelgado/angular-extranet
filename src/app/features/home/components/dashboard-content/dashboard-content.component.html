@@ -2,29 +2,91 @@
   <app-user-info></app-user-info>
   <div class="dashboard-grid-wrapper">
     <div class="box box-historic">
-        <div class="box-historic__content">
-            <div class="box-historic__icon-button">
-                <mat-icon
-                  class="box-historic__icon-button box-historic__icon"
-                  svgIcon="empty-wallet"
-                  aria-hidden="true"
-                ></mat-icon>
-              </div>
-              <span class="box-historic__title">Mi Posición Actual</span>
-              <span class="box-historic__subtitle">Detalle al {{ currentDate | date: 'dd MMM YYYY'}}</span>
-              <span class="box-historic__amount">{{ amount }}</span>
-              <button class="box-historic__button">
-                <span class="box-historic__button-title">Posición histórica</span>
-                <mat-icon
-                class="box-historic__button-icon"
-                svgIcon="chevron-right"
-                aria-hidden="true"
-              ></mat-icon>
-              </button>
+      <div class="box-historic__content">
+        <div class="box-historic__icon-button">
+          <mat-icon
+            class="box-historic__icon-button box-historic__icon"
+            svgIcon="empty-wallet"
+            aria-hidden="true"
+          ></mat-icon>
         </div>
+        <span class="box-historic__title">Mi Posición Actual</span>
+        <span class="box-historic__subtitle"
+          >Detalle al {{ currentDate | date : "dd MMM YYYY" }}</span
+        >
+        <span class="box-historic__amount">{{ amount }}</span>
+        <button class="box-historic__button">
+          <span class="box-historic__button-title">Posición histórica</span>
+          <mat-icon
+            class="box-historic__button-icon"
+            svgIcon="chevron-right"
+            aria-hidden="true"
+          ></mat-icon>
+        </button>
+      </div>
     </div>
-    <div class="box">Three</div>
-    <div class="box">Four</div>
-    <div class="box">Five</div>
+    <div class="box">
+      <div class="box__content">
+        <div class="box__content-header">
+          <div class="box__icon-button">
+            <mat-icon
+              class="box__icon-button box__icon"
+              svgIcon="piggy-bank"
+              aria-hidden="true"
+            ></mat-icon>
+          </div>
+          <span class="box__title">Fondos de Inversión</span>
+        </div>
+        <span class="box__subtitle">{{ investmentFundAmount }}</span>
+        <span class="box__link">Estado de inversión</span>
+        <span class="box__completion">
+            <span class="box__completion-percentage">58%</span>
+            <div class="box__loading">
+                <span class="box__loading-bar"></span>
+            </div>
+        </span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box__content">
+        <div class="box__content-header">
+          <div class="box__icon-button">
+            <mat-icon
+              class="box__icon-button box__icon"
+              svgIcon="safe"
+              aria-hidden="true"
+            ></mat-icon>
+          </div>
+          <span class="box__title">Fondos Mutuos</span>
+        </div>
+        <span class="box__subtitle">{{ mutualFundAmount }}</span>
+        <span class="box__link">Estado de cuenta</span>
+        <span class="box__completion">
+            <span class="box__completion-percentage">58%</span>
+            <div class="box__loading">
+                <span class="box__loading-bar"></span>
+            </div>
+        </span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box__content">
+        <div class="box__content-header">
+          <div class="box__icon-button">
+            <mat-icon
+              class="box__icon-button box__icon"
+              svgIcon="filled-wallet"
+              aria-hidden="true"
+            ></mat-icon>
+          </div>
+          <span class="box__title">Comunicación e informes</span>
+
+        </div>
+        <span class="box__description">Aquí te mantendrás informado acerca de tus fondos.</span>
+        <span class="box__foot">
+            <span class="box__line"></span>
+        </span>
+      </div>
+    </div>
   </div>
 </div>

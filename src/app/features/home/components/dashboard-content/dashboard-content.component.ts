@@ -16,6 +16,8 @@ import { DatePipe } from '@angular/common';
 export class DashboardContentComponent {
   currentDate = new Date()
   amount = "S/ 125,528.87"
+  investmentFundAmount = "S/ 50,000.00"
+  mutualFundAmount = "S/ 65,528.87"
   constructor(
     private service: MatIconService,
     private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer
